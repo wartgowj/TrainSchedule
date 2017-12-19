@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Train Arrival Schedule</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron row border-black">
+            <h1 class="display-3 mx-auto">Train Arrival Schedule</h1>
+            <p class="lead mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dolorem, adipisci pariatur, modi aliquam totam quidem.</p>
+        </div>
+        <div class="row">
+        	<h2>Active Train Schedule</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Until Arrival</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <th scope="row">1</th> -->
+                    <td>example</td>
+                    <td>example</td>
+                    <td>example</td>
+                    <td>example</td>
+                    <td>example</td>
+
+                </tr>
+            </tbody>
+        </table>
+        </div>
+       
+            <form>
+            	<h2>Add New Train</h2>
+                <div class="form-group">
+                    <label for="train-name">Train Name</label>
+                    <input type="text" class="form-control" id="train-name" placeholder="Orient Express">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="The Moon">
+                </div>
+                <div class="form-group">
+                    <label for="next-arrival">Next Arrival Time (hh:mm - military time)</label>
+                    <input type="text" class="form-control" id="next-arrival" placeholder="23:15">
+                </div>
+                <div class="form-group">
+                    <label for="frequency">Frequency (min)</label>
+                    <input type="text" class="form-control" id="frequency" placeholder="30">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+            </form>
+     
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
