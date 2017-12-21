@@ -6,6 +6,7 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,7 +22,7 @@
         </div>
         <div class="row">
         	<h2>Active Train Schedule</h2>
-        <table class="table">
+        <table class="table" id="trainList">
             <thead>
                 <tr>
                     <th scope="col">Train Name</th>
@@ -33,13 +34,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <!-- <th scope="row">1</th> -->
-                    <td>example</td>
-                    <td>example</td>
-                    <td>example</td>
-                    <td>example</td>
-                    <td>example</td>
-
+                    <!--new trains pushed into here-->
                 </tr>
             </tbody>
         </table>
