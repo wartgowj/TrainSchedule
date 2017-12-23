@@ -58,7 +58,8 @@ database.ref().on("child_added", function(childSnapshot){
 
   //convert first time (push back 1 year to make sure it comes before current time)
   var nextArrivalConverted = moment(nextArrival, "HH:mm").subtract(1, "years");
- 
+  // console.log(firstTimeConverted);
+
   //current time
   var currentTime = moment();
 
